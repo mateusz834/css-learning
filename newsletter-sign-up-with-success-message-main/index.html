@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+	<link rel="stylesheet" href="/main.css">
+	<script defer src="/main.js"></script>
+</head>
+
+<body>
+	<main>
+		<article id="main">
+			<div>
+				<header>
+					<h1>Stay updated!</h1>
+					<p>Join 60,000+ product managers receiving monthly updates on:</p>
+				</header>
+
+				<ul>
+					<li>Product discovery and building what matters</li>
+					<li>Measuring to ensure updates are a success</li>
+					<li>And much more!</li>
+				</ul>
+
+				<form>
+					<div>
+						<label for="email-input"> Email address </label>
+						<div id="email-input-error"></div>
+					</div>
+					<input id="email-input" type="email" name="email" placeholder="email@company.com">
+					<button type="button" id="subscribe">Subscribe to monthly newsletter</button>
+				</form>
+			</div>
+			<img src="/assets/images/illustration-sign-up-desktop.svg">
+		</article>
+
+		<section id="popup" class="hidden">
+			<img src="/assets/images/icon-success.svg">
+
+			<h2>Thanks for subscribing!</h2>
+
+			<p>A confirmation email has been sent to <span id="email">ash@loremcompany.com.</span>
+				Please open it and click the button inside to confirm your subscription.</p>
+
+			<button id="popup-dismiss"> Dismiss message </button>
+		</section>
+	</main>
+</body>
+
+</html>

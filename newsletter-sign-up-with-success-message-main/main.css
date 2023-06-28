@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none !important;
+}
+
+body {
+	background: hsl(234, 29%, 20%);
+}
+
+html, body {
+	height: 100%;
+}
+
+main {
+	min-height: 100%;
+	height: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+article {
+	max-width: 60em;
+	margin: 0 auto;
+	background: white;
+	padding: 1.5em;
+	border-radius: 2em;
+
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+
+article > div {
+	padding: 0 2em;
+}
+
+header > h1 {
+	font-size: 3em;
+	text-align: center;
+}
+
+header > p {
+	padding-top: 1em;
+}
+
+article ul {
+	padding-top: 1em;
+	list-style-image: url("./assets/images/icon-list.svg");
+	padding-left: 22px;
+}
+
+li {
+	margin: .45em;
+}
+
+form {
+	padding-top: 2em;
+}
+
+form > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#email-input-error {
+	font-weight: 700;
+	font-size: 0.75rem;
+	color: red;
+}
+
+label {
+	font-weight: 700;
+	font-size: 0.75rem;
+	display: block;
+}
+
+input {
+	width: 100%;
+	padding: 1.25em;
+	border-radius: 0.5em;
+	border: 1px solid hsl(231, 7%, 60%);
+	margin-top: 0.75em;
+	font-size: 1.25em;
+}
+
+button {
+	font-weight: 700;
+	color: white;
+	display: block;
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	border: none;
+	margin-top: 1.75rem;
+	background: hsl(234, 29%, 20%);
+	font-size: 1.0625rem;
+}
+
+button:hover, button:focus-visible {
+	background: linear-gradient(90deg, #FF5476, #FF6740);
+}
+
+section {
+	max-width: 35em;
+	margin: 0 auto;
+	background: white;
+	padding: 1.5em;
+	border-radius: 2em;
+	padding: 4em;
+}
+
+section h2 {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin: 0.75em 0;
+}
+
+#email {
+	font-weight: 700;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+	main {
+		justify-content: stretch;
+	}
+
+	article {
+		flex-grow: 1;
+		min-width: 100%;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		border-radius: 0;
+		padding: 0;
+		padding-bottom: 1em;
+	}
+
+	article img {
+		max-width: 100%;
+		margin-top: -50%;
+	}
+
+	article > div {
+		padding: 0 1em;
+	}
+	section {
+		min-width: 100%;
+		min-height: 100%;
+		border-radius: 0;
+		padding: 1em;
+	}
+}
